@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEF5FF;
+}                                   
+.navbar{
+    background-color: #172E58 !important;
+    box-shadow: 2px 2px 2px rgb(167, 167, 176);
+}
+.navbar div a{
+    padding-right: 23px !important;
+}
+.container{
+    width: 70%;
+    margin: 25px auto;
+}
+.card-body p{
+    font-size: 0.8rem;
+    line-height: 1;
+    margin: 0;
+}
+.card-body h5{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.card-body .dropdowns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#search{
+    width: 30%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    /* border: 1px solid transparent; */
+    padding: 0.375rem 0.75rem;
+    box-shadow: 1px 1px 5px rgb(78, 74, 113);
+    font-size: 1rem;
+    /* line-height: 1.5; */
+    line-height: 1;
+    background-color: rgb(23,46,88);
+    border-radius: 0.25rem;
+    /* border: 1px solid black; */
+}
+.Ranklist ul li:hover, .students ul li:hover, .others ul li:hover{
+    transform: translateY(-3px);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.075,.82,.165,1);
+    box-shadow: 5px 5px rgba(15,93,244,.4), 10px 10px rgba(15,93,244,.3), 15px 15px rgba(15,93,244,.2), 20px 20px rgba(15,93,244,.1), 25px 25px rgba(15,93,244,.05);
+}
+.dropdowns .btn-group{
+    margin: 0.5rem;
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: white !important;
+    /* color: black; */
+    border: none;
+    /* width: 100px; */
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+}
+.dropdown-menu{
+    padding: 0 !important;
+    /* border: 0.1px solid transparent; */
+    border: none;
+    /* width: fit-content; */
+    /* width: 100px !important; */
+    align-self: center !important;
+    /* display: flex; */
+    flex-direction: column;
+    --bs-dropdown-min-width: fit-content;
+    box-shadow: 0px 30px 20px rgb(221, 221, 221);
+}
+.dropdown-menu li {
+    font-weight: normal;
+    display: block;
+    width: 102%;
+    font-size: 0.9em;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.dropdown-menu li :hover{
+    background-color: blue;
+    color: white;
+}
